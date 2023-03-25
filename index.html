@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <a href="https://www.abismodev.com" target="_blank"><img class="logo" src="assets/logo.svg"></a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container-calculadora">
+                    <div class="box-calculadora">
+                        <div class="titulo-calculadora">
+                            <h1>Calculadora Simples</h1>
+                        </div>
+                        <div class="container-dados">
+                            <div class="entrada-dados">
+                                <input type="number" name="entrada-1" id="entrada-1">
+                                <input type="number" name="entrada-2" id="entrada-2">
+                            </div>
+                            <div class="operadores-calculadora">
+                                <div class="box-operador">
+                                    <input type="radio" name="operadores" value="soma" id="soma" checked>
+                                    <label for="soma">+</label>
+                                </div>
+                                <div class="box-operador">
+                                    <input type="radio" name="operadores" value="subtracao" id="subtracao">
+                                    <label for="soma">-</label>
+                                </div>
+                                <div class="box-operador">
+                                    <input type="radio" name="operadores" value="multiplicacao" id="multiplicacao">
+                                    <label for="soma">*</label>
+                                </div>
+                                <div class="box-operador">
+                                    <input type="radio" name="operadores" value="divisao" id="divisao">
+                                    <label for="soma">/</label>
+                                </div>
+                            </div>
+                            <div class="btn-calculadora">
+                                <input type="button" name="acao" value="Calcular" onclick="calcular()">
+                            </div>
+                            <div id="resultado" class="resultado">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="link-rodape">
+                    <nav class="nav-rodape">
+                        <ul>
+                            <li><a href="https://github.com/AbismoDev" target="_blank">Github</a></li>
+                            <li><a href="https://abismodev.com/" target="_blank">Portifólio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="creditos">
+                    <p>Site desenvolvido com <img class="icon-coracao" src="assets/icon-coracao.svg" alt="amor" title="Amor"> por <a href="https://www.instagram.com/welli.18" target="_blank">AbismoDev</a>.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
