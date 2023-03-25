@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #01030E;
+}
+
+header{
+    padding: 20px 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{    
+    transition: .5s;
+}
+
+.logo:hover{
+    opacity: .7;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 35px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container-calculadora{
+    max-width: 300px;
+    width: 100%;
+    padding: 2%;
+    margin: 8vh auto 0;
+    background-color: #000018;
+    box-shadow: 0 0 3px 1px #111177;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-calculadora{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-calculadora{
+    text-align: center;
+    padding: 2%;
+    font-size: 22px;
+}
+
+.container-dados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.entrada-dados input[type=number]{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 3px;
+}
+
+.entrada-dados input[type=number]:last-child{
+    margin-top: 5px;
+}
+
+.entrada-dados input[type=number]:focus{
+    outline: none;
+}
+
+.entrada-dados input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.operadores-calculadora{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.box-operador{
+    display: flex;
+    align-items: center;
+}
+
+.box-operador input[type=radio]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.box-operador label{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.btn-calculadora{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 2%;
+}
+
+.btn-calculadora input[type=button]{
+    max-width: 150px;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    background-color: #050531;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 2px #0c0c66;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-calculadora input[type=button]:hover{
+    opacity: .9;
+}
+
+.resultado{    
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resultado p{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+footer{
+    width: 100%;    
+    position: absolute;
+    bottom: 0;
+    padding: 20px 2%;
+    text-align: center;
+}
+
+footer p{    
+    color:white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+}
+
+footer a:hover{
+    opacity: .7;
+}
+
+.link-rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-rodape ul{
+    list-style: none;
+    display: flex;
+    max-width: 150px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.creditos{
+    margin-top: 10px;
+}
